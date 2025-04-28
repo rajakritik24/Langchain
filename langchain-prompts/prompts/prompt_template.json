@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "research_paper",
+        "summary_length",
+        "summary_style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n    Summarize the following research paper:\n    {research_paper} with {summary_length} and {summary_style}\n    Make sure to include all the important details and equations. Keep it concise and to the point.\n    Include the analogies and metaphors to make it more engaging.\n    ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
