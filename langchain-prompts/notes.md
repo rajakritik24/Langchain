@@ -18,11 +18,18 @@ Why not use the f-string to inject the variables in the prompt ??
 2. Human Message -> Message sent by the user to the LLM
 3. AI Message -> The response to user query sent by the LLM
 
+
 ## Invoke
+
 1. Invoke method can be used with:
     a. Single Message - Single turn standalone query
         * Static message
         * Dynamic message (Prompt template)
     b. List of messages - Multi turn conversation
         * Static message - SystemMessage, HumanMessage, AIMessage
-        * Dynamic message - PromptTemplate
+        * Dynamic message - ChatPromptTemplate (used when list of messages are sent)
+
+
+## Message Placeholder
+
+A MessagePlaceholder in langchain is a special placeholder used inside a ChatPromptTemplate to dynamically insert the chat history or a list of messages in runtime.
